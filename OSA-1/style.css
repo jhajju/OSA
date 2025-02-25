@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+    background: url(main.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: #f8f9fa;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding-top: 80px; 
+    text-align: center; 
+}
+
+/* Text Styling */
+h1 {
+    font-size: 125px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 80px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* Navbar Styling */
+.navbar {
+    position: fixed;
+    top: 0; /* Ensure it sticks to the top */
+    left: 0; /* Ensure it stays aligned */
+    width: 100%; /* Ensures it spans the full width */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px; /* Adds some space inside */
+    z-index: 1000; /* Ensures it's above all content */
+}
+
+.logo img {
+    width: 75px; 
+    height: auto;
+}
+
+
+/* Dropdown Styling */
+.dropdown .btn-secondary {
+    background-color: #FFFFFF;
+    color: #72000a;
+    border: none;
+    font-weight: 20px;
+    padding: 8px 12px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown .btn-secondary:hover {
+    background-color: #c7c7c7;
+    color: #000000;
+}
+
+.dropdow-item:hover {
+    background-color: #000000;
+}
+
+.dropdown-item:focus, 
+.dropdown-item:active {
+    background-color: #c7c7c7 !important;
+    color: inherit !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 750px; /* Limits max width */
+}
+
+/* Button Styling */
+.btn-primary {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 15px;
+    border-radius: 5px;
+    background-color: #FFFFFF; /* White background */
+    color: #72000a; /* Maroon text */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 250px; /* Fixed width for consistency */
+    height: 50px; /* Fixed height for uniformity */
+    text-align: center;
+}
+
+/* Button Hover */
+.btn-primary:hover {
+    background-color: #E0E0E0;
+    color: #000000;
+}
+
+/* Button Active (Click) */
+.btn-primary:active {
+    background-color: #C0C0C0 !important;
+    color: #000000 !important;
+}
+
+/* Button Focus (Removes Blue Highlight) */
+.btn-primary:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* Button Styling */
+.btn-primary {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 15px;
+    border-radius: 5px;
+    background-color: #FFFFFF; /* White background */
+    color: #72000a; /* Maroon text */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 250px; /* Fixed width for consistency */
+    height: 50px; /* Fixed height for uniformity */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+/* Button Hover */
+.btn-primary:hover {
+    background-color: #cccccc;
+    color: #000000;
+    box-shadow: 0  0 25px #270003;;
+
+}
+
+/* Button Active (Click) */
+.btn-primary:active {
+    background-color: #C0C0C0;
+    color: #000000;
+}
+
+/* Button Focus (Removes Blue Highlight) */
+.btn-primary:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-primary:focus, 
+.btn-primary:focus-visible {
+    background-color: #FFFFFF;
+    color: #72000a;
+    outline: none;
+    box-shadow: none;
+}
+
+/* Responsive Fix for Smaller Screens */
+@media (max-width: 480px) {
+    .btn-primary {
+        width: 100%; /* Makes buttons full-width on smaller screens */
+    }
+}
+
+/*------------------------------------------------ ABOUT US----------------------------------- */
+.about-us-h1 {
+    margin-top: 10px; 
+    font-size: 100px;
+    font-weight: bold;
+    border-bottom: 10px solid #ffffff;
+    display: inline-block;
+}
+.hover-effect {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.hover-effect:hover {
+    transform: scale(1.04); 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); 
+}
+
+.vision-mission-goals .p-4 {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.vision-mission-goals .p-4:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2); 
+}
+
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.block {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;    
+}
