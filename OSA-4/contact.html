@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Official website for the Office of Student Affairs at Technological University of the Philippines - Cavite.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Us</title>
+</head>
+<body>
+    <div class="content-wrapper">
+        <nav class="navbar-expand-md navbar fixed-top d-flex align-items-center p-2">
+            <a href="https://www.tupcavite.edu.ph/" class="logo">
+                <img src="logo.png" alt="School Logo">
+            </a>
+            <div class="dropdown ms-auto me-5">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-list"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="index.html">Services</a></li>
+                    <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                    <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <h1 class="about-us-h1 fw-bold text-center mt-5">Contact Us</h1>
+
+        <div class="container mt-4">
+            <div class="row justify-content-center">
+                <div class="col-md-10 col-lg-8">
+                    <div class="contact-container d-flex flex-column flex-md-row shadow-lg p-4 rounded">
+                        <!-- Left Side: Contact Form -->
+                        <div class="contact-box text-white text-center flex-fill">
+                            <h2 class="text-start fw-bold">Get in touch!</h2>
+                            <form action="https://api.web3forms.com/submit" method="POST">
+                                <input type="hidden" name="access_key" value="13bc3627-44a8-4fbd-94e1-48b79d894646">
+                                <input type="hidden" name="TUPC OSA" value="New Submission From Osa Website.">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control custom-red-border text-white" name="name" placeholder="Name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control custom-red-border text-white" name="email" placeholder="Email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control custom-red-border text-white" name="message" rows="4" placeholder="Message" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary fw-bold">Send Message</button>
+                                <div id="result" class="mt-3"></div>
+                            </form>
+                        </div>
+                        
+                        <!-- Right Side: Contact Information -->
+                        <div class="contact-info text-white text-start p-4 flex-fill">
+                            <h2 class="text-center fw-bold">Contact Information</h2><br><br>
+                            <p class="small"><i class="bi bi-envelope-fill"></i> <a href="mailto:tupc_osa@gsfe.tupcavite.edu.ph" class="text-white">tupc_osa@gsfe.tupcavite.edu.ph</a></p>
+                            <p class="small"><i class="bi bi-telephone-fill"></i> +63 (046) 416 4920</p>
+                            <p class="small"><i class="bi bi-telephone-inbound-fill"></i> Local: 402</p>
+                            <p class="small"><i class="bi bi-facebook"></i><a href="https://www.facebook.com/tupc.osa" class="text-white" target="_blank"> TUPC OSA</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- Closes content-wrapper -->
+
+    <script src="contact.js"></script>
+    <script src="footer.js"></script>
+</body>
+
+
+</html>
